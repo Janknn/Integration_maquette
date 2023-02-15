@@ -60,5 +60,57 @@ body header nav .grp2 input::placeholder {
   font-size: 25px;
   color: black;
 }
+body section {
+  display: flex;
+}
+body section .menu {
+  width: 23%;
+  height: 1vh;
+  background-color: red;
+}
+body section .menu .dashboard {
+  display: flex;
+  width: 253px;
+  height: 65px;
+  background: linear-gradient(266.37deg, #FAFF00 -5.82%, #FAFF00 15.95%, #1970D6 41.2%, #6C1182 72.88%);
+  border-radius: 17px;
+  align-items: center;
+  justify-content: center;
+}
+body section .menu .dashboard img {
+  width: 44px;
+  height: 45px;
+}
+body section .menu .dashboard p {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+body section .menu .list li {
+  display: flex;
+}
+body section .menu .list li img {
+  width: 38px;
+  height: 38px;
+}
+body section .menu .list li p {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+}
+body section .menu .logout {
+  display: flex;
+}
+body section .menu .logout img {
+  width: 38px;
+  height: 38px;
+}
+body section .menu .logout p {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+}
 
 /*# sourceMappingURL=style.css.map */
