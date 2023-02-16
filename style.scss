@@ -142,6 +142,52 @@ body {
             width: 51%;
             height: 1vh;
             background-color: blue;
+
+            .top_content {
+                display: flex;
+
+                .tabs {
+                    width: 438px;
+                    height: 62px;
+                    display: flex;
+                    background: #292727;
+                    border-radius: 17px;
+
+                    .selection {
+                        width: 134px;
+                        height: 44px;
+                        background: #0D0C0C;
+                        border-radius: 17px;
+                    }
+                }
+            }
+
+            .charts {
+                width: auto;
+                height: 558px; 
+                background: rgba(48, 53, 65, 0.67);
+                border-radius: 30px;
+            }
+
+            .bot_content {
+                
+                .bot_header {
+                    display: flex;
+                }
+
+                .transactions {
+                    display: flex;
+                    width: auto;
+                    height: 64px;
+                    background: rgba(32, 35, 43, 0.7);
+                    border-radius: 30px;
+
+                    .curve {
+                        width: 143px;
+                        height: 10px;
+                    }
+                }
+            }
         }
 
         .value_content {

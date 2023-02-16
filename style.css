@@ -117,6 +117,42 @@ body section .main_content {
   height: 1vh;
   background-color: blue;
 }
+body section .main_content .top_content {
+  display: flex;
+}
+body section .main_content .top_content .tabs {
+  width: 438px;
+  height: 62px;
+  display: flex;
+  background: #292727;
+  border-radius: 17px;
+}
+body section .main_content .top_content .tabs .selection {
+  width: 134px;
+  height: 44px;
+  background: #0D0C0C;
+  border-radius: 17px;
+}
+body section .main_content .charts {
+  width: auto;
+  height: 558px;
+  background: rgba(48, 53, 65, 0.67);
+  border-radius: 30px;
+}
+body section .main_content .bot_content .bot_header {
+  display: flex;
+}
+body section .main_content .bot_content .transactions {
+  display: flex;
+  width: auto;
+  height: 64px;
+  background: rgba(32, 35, 43, 0.7);
+  border-radius: 30px;
+}
+body section .main_content .bot_content .transactions .curve {
+  width: 143px;
+  height: 10px;
+}
 body section .value_content {
   width: 26%;
   height: 1vh;
