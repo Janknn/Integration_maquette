@@ -137,5 +137,43 @@ body {
                 }
             }
         }
+
+        .main_content {
+            width: 51%;
+            height: 1vh;
+            background-color: blue;
+        }
+
+        .value_content {
+            width: 26%;
+            height: 1vh;
+            background-color: green;
+
+            .devise {
+                display: flex;
+
+                p {
+                    color: white ;
+                }
+            }
+
+            .assets {
+
+                .el-asset {
+                    width: 407px;
+                    height: 174px;
+                    border-radius: 30px;
+
+                }
+
+                .bit {
+                    background: linear-gradient(98.73deg, #611D8D 35.75%, #2F7EC1 73.26%);
+                }
+
+                .eth {
+                    background: linear-gradient(99.56deg, #FAFF00 35.82%, #29ABE2 64.75%, rgba(255, 255, 255, 0.7) 91.33%);
+                }
+            }
+        }
     }
 }
