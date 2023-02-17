@@ -67,9 +67,14 @@
         <div class="main_content">
             <div class="top_content">
                 <div class="balance">
-                    <p>Total Balance</p>
-                    <p>0.97894652</p>
-                    <p>$40,123.56</p>
+                    <p class="balance_opacity">Total Balance</p>
+                    <div  class="balance_unite">
+                        <p>0.97894652</p>
+                        <div>
+                            <p>BTC</p>
+                        </div>
+                    </div>
+                    <p class="balance_opacity">$40,123.56</p>
                 </div>
                 <div class="tabs">
                     <div class="selection">
@@ -80,42 +85,64 @@
                     <p>P2P</p>
                 </div>
             </div>
-            <div class="charts"></div>
+            <div class="graph">
+                <div class="time">
+                    <div>
+                        <p>1H</p>
+                    </div>
+                    <div>
+                        <p>1D</p>
+                    </div>
+                    <div>
+                        <p>3D</p>
+                    </div>
+                    <div>
+                        <p>1W</p>
+                    </div>
+                    <div>
+                        <p>1M</p>
+                    </div>
+                    <div>
+                        <img src="img/Calendar.png" alt="">
+                    </div>
+                </div>
+                <canvas id="graph"></canvas>
+            </div>
             <div class="bot_content">
                 <div class="bot_header">
                     <p>Recent Transactions </p>
-                    <p>See all coins</p>
+                    <p class="p_color">See all coins</p>
                 </div>
                 <div class="transactions">
                     <img src="img/black-bitcoin.png" alt="">
-                    <div>
-                        <p>Bitcoin</p>
-                        <p>BTC</p>
+                    <div id="first_group">
+                        <p class="top_word">Bitcoin</p>
+                        <p class="bot_word">BTC</p>
                     </div>
                     <div>
-                        <p>Market Cap</p>
-                        <p>$40,243.70</p>
+                        <p class="top_word">Market Cap</p>
+                        <p class="p_blue">$40,243.70</p>
                     </div>
                     <div>
-                        <p>24h change</p>
-                        <p>+1,56</p>
+                        <p class="top_word">24h change</p>
+                        <p class="positive">+1,56</p>
                     </div>
                     <img class="curve" src="img/curve.png" alt="">
                     <button>trade</button>
                 </div>
                 <div class="transactions">
-                    <img src="img/black-bitcoin.png" alt="">
-                    <div>
-                        <p>Bitcoin</p>
-                        <p>BTC</p>
+                    <img src="img/ethereum-white.png" alt="">
+                    <div id="first_group">
+                        <p class="top_word">Etherum</p>
+                        <p class="bot_word">ETH</p>
                     </div>
                     <div>
-                        <p>Market Cap</p>
-                        <p>$40,243.70</p>
+                        <p class="top_word">Market Cap</p>
+                        <p class="p_purple">$40,243.70</p>
                     </div>
                     <div>
-                        <p>24h change</p>
-                        <p>+1,56</p>
+                        <p class="top_word">24h change</p>
+                        <p class="negative">+1,56</p>
                     </div>
                     <img class="curve" src="img/curve.png" alt="">
                     <button>trade</button>
@@ -215,5 +242,39 @@
         </div>
 
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <script>
+        let ctx = document.getElementById('graph').getContext('2d')
+
+        let graph = new Chart(ctx, {
+            type: 'line',
+
+            data: {
+                labels: [
+                    '5Nov',
+                    '6Nov',
+                    '7Nov',
+                    '8Nov',
+                    '9Nov',
+                    '10Nov',
+                    '11Nov',
+                    '12Nov',
+                    '13Nov',
+                    '14Nov',
+                    '15Nov',
+                ],
+
+                datasets: [
+                    {
+                        label: 'ETH',
+                        data: [150,600,300,250,50,400,225,300,700,450,400],
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        backgroundColor: 'transparent'
+                    }
+                    
+                ]
+            }
+        })
+    </script>
 </body>
 </html>
