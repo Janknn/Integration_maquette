@@ -64,9 +64,11 @@ body section {
   display: flex;
 }
 body section .menu {
-  width: 23%;
-  height: 1vh;
-  background-color: red;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
 }
 body section .menu .dashboard {
   display: flex;
@@ -76,6 +78,8 @@ body section .menu .dashboard {
   border-radius: 17px;
   align-items: center;
   justify-content: center;
+  gap: 8px;
+  margin-bottom: 32px;
 }
 body section .menu .dashboard img {
   width: 44px;
@@ -88,9 +92,15 @@ body section .menu .dashboard p {
 }
 body section .menu .list li {
   display: flex;
+  gap: 8px;
+  margin-top: 24px;
 }
 body section .menu .list li img {
   width: 38px;
+  height: 38px;
+}
+body section .menu .list li .client_image {
+  width: 55px;
   height: 38px;
 }
 body section .menu .list li p {
@@ -99,23 +109,11 @@ body section .menu .list li p {
   font-weight: 500;
   color: rgba(255, 255, 255, 0.8);
 }
-body section .menu .logout {
-  display: flex;
-}
-body section .menu .logout img {
-  width: 38px;
-  height: 38px;
-}
-body section .menu .logout p {
-  font-family: "Poppins", sans-serif;
-  font-size: 25px;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.8);
+body section .menu .list li:last-child {
+  margin-top: 216px;
 }
 body section .main_content {
-  width: 51%;
-  height: 1vh;
-  background-color: blue;
+  width: 54%;
 }
 body section .main_content .top_content {
   display: flex;
@@ -155,8 +153,6 @@ body section .main_content .bot_content .transactions .curve {
 }
 body section .value_content {
   width: 26%;
-  height: 1vh;
-  background-color: green;
 }
 body section .value_content .devise {
   display: flex;
