@@ -153,23 +153,80 @@ body section .main_content .bot_content .transactions .curve {
 }
 body section .value_content {
   width: 26%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body section .value_content .title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #FFFFFF;
+  width: 100%;
+  margin-bottom: 24px;
 }
 body section .value_content .devise {
   display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+body section .value_content .devise img {
+  margin-right: 16px;
+}
+body section .value_content .devise .first_infos {
+  width: 180px;
 }
 body section .value_content .devise p {
-  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 19px;
+  color: #FFFFFF;
+}
+body section .value_content .devise .positive {
+  color: #4AD619;
+}
+body section .value_content .devise .negative {
+  color: #D61919;
+}
+body section .value_content .devise .opacity {
+  opacity: 0.7;
 }
 body section .value_content .assets .el-asset {
   width: 407px;
   height: 174px;
   border-radius: 30px;
+  padding-right: 54px;
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 16px;
 }
-body section .value_content .assets .bit {
+body section .value_content .assets .el-asset img {
+  width: 70px;
+  height: 70px;
+}
+body section .value_content .assets .el-asset .card_value {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+body section .value_content .assets .card_devise {
+  font-size: 19px;
+}
+body section .value_content .assets .btc {
   background: linear-gradient(98.73deg, #611D8D 35.75%, #2F7EC1 73.26%);
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 27px;
+  color: #FFFFFF;
 }
 body section .value_content .assets .eth {
   background: linear-gradient(99.56deg, #FAFF00 35.82%, #29ABE2 64.75%, rgba(255, 255, 255, 0.7) 91.33%);
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 27px;
+  color: #000000;
 }
 
 /*# sourceMappingURL=style.css.map */
